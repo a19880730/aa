@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import time
 import os
 
-url = 'https://wds.modian.com/show_weidashang_pro/4686#1'
+url = 'https://wds.modian.com/show_weidashang_pro/5809#1'
 group = '空'
 interval = 60
 
@@ -51,7 +51,7 @@ def writeLog(logFile, log):
 def qqReport(addedUserInfo, group):
     localtime = time.asctime(time.localtime(time.time()))
     for user in addedUserInfo: 
-        msg = user + ' 刚刚支持了小北' + addedUserInfo[user][3:] + '，【女神之战】正在火热进行中，请大家为我们的黑夜女神小北奉上我们的力量吧，微打赏链接：https://wds.modian.com/show_weidashang_pro/4686#1'    
+        msg = user + ' 刚刚支持了杨允涵' + addedUserInfo[user][3:] + '，【最后冲刺】正在火热进行中，请大家为我们的女神闪闪奉上我们的力量吧，微打赏链接：https://wds.modian.com/show_weidashang_pro/5809#1'    
         # log = localtime + ': ' + msg + '\n'
         # writeLog('log.txt', log)
         cmd = 'qq send group ' + group + ' ' + msg
